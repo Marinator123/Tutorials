@@ -11,8 +11,7 @@ test('Testet die Hello Komponente mit Jest Snapshot', () => {
     );
     let tree = component.toJSON();
     expect(tree).toMatchSnapshot();
-
-    tree.props.onChange();
+    tree.children[0].props.onChange();
     tree = component.toJSON();
     expect(tree).toMatchSnapshot();
 });
@@ -20,8 +19,8 @@ test('Testet die Hello Komponente mit Jest Snapshot', () => {
 test('Testet die Hello Checkbox mit Enzyme', () => {
     const checkbox = shallow(<Hello labelOn="On" labelOff="Off" />);
     
-    expect(checkbox.text()).toEqual('HelloOff');
+    expect(checkbox.text()).toEqual('Off');
     checkbox.find('input').simulate('change');
-    expect(checkbox.text()).toEqual('HelloOn');
+    expect(checkbox.text()).toEqual('On');
 });
 
