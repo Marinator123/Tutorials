@@ -1,9 +1,9 @@
 import React from 'react'
 import renderer from 'react-test-renderer';
-import World from '../src/world.jsx';
+import World from '../src/World.jsx';
 
 
-test('Test example', () => {
+test('Testet die World Komponente', () => {
     const component = renderer.create(
         <World/>,
     );

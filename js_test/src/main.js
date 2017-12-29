@@ -1,5 +1,5 @@
-import Hello from './hello.jsx';
-import World from './world.jsx';
+import Hello from './Hello.jsx';
+import World from './World.jsx';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
