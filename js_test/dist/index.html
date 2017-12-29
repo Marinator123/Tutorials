@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Testseite</title>    
+    <title>Testseite</title>
+    <!-- Jest hinzufügen! -->
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheet.css" />
 </head>
 <body>
     <div id="hello"></div>
     <div id="world"></div>
     <script src="bundle.js"></script>
+    <script>renderApp("hello", "world");</script>
 </body>
 </html>

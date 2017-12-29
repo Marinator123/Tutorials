@@ -10,7 +10,7 @@ const extractLESS = new ExtractTextPlugin({
 module.exports = {
   entry: {
     bundle: './src/main.js',
-    style: './src/stylesheet.less'
+    stylesheet: './src/stylesheet.less'
   },
   output: { 
     path: __dirname + '/dist',
