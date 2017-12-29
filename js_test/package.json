@@ -24,6 +24,9 @@
         "react-dom": "^16.2.0"
     },
     "babel": {
-        "presets": [ "react", "env" ]
+        "presets": [
+            "react",
+            "env"
+        ]
     }
 }
