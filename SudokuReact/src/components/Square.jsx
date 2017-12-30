@@ -4,7 +4,6 @@ import React from 'react';
  * 
  */
 class Square extends React.Component {
-    //todo: readonly buttons für anfangszahlen
     constructor(props) {
         super(props);
         this._onBlur = this._onBlur.bind(this);
@@ -46,7 +45,8 @@ class Square extends React.Component {
     render () {
         return (
             <input type="text" className="square" value={this.props.value}
-            onBlur={this._onBlur} onChange={this._onChange} onKeyPress={this._handleKeyPress}>
+                onBlur={this._onBlur} onChange={this._onChange} onKeyPress={this._handleKeyPress} 
+                readOnly={this.props.isReadOnly}>
             </input>
         );
     }
