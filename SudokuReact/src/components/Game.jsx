@@ -46,13 +46,7 @@ class Game extends React.Component {
         return rowSquares.map(a => a.value).filter(val => val !== '');
     }
 
-    /**
-     * 
-     * @param {Int} startId id des Quadrats oben links im Feld
-     * @param {*} squares 
-     */
     getAllValuesForField(startId, squares) {
-        //const startId = (fieldId - fieldId % 3) * 9 + fieldId % 3 * 3;
         const fieldSquares = squares.slice(startId, startId + 3).concat(
             squares.slice(startId + 9, startId + 12).concat(squares.slice(startId + 18, startId + 21)));
         return fieldSquares.map(a => a.value).filter(val => val !== '');
