@@ -1,8 +1,9 @@
 @border-color: #999;
-@border-color-highlighted: rgb(0, 255, 76);
+@bg-color: #fff;
+@bg-color-highlighted: rgb(0, 255, 76);
 
 .square {
-    background: #fff;
+    background: @bg-color;
     border: 1px solid @border-color;
     float: left;
     font-size: 24px;
@@ -15,7 +16,7 @@
     text-align: center;
     width: 34px;
     &:focus {
-      border: 1px solid @border-color-highlighted;
+      background: @bg-color-highlighted;
       outline: none;
     }
   }

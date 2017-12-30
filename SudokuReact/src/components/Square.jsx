@@ -6,12 +6,22 @@ import React from 'react';
 class Square extends React.Component {
     constructor(props) {
         super(props);
-        this._onBlur = this._onBlur.bind(this);
-        this._onChange = this._onChange.bind(this);
-        this._handleKeyPress = this._handleKeyPress.bind(this);
+        
+        const regularLineStyle = '1px solid grey';
+        const thickLineStyle = '2px solid black';
+        this.style = {
+            color:this.props.isReadOnly ? 'black' : 'grey',
+            borderBottom:[2,5,8].indexOf(this.props.rowId) > -1 ? thickLineStyle: regularLineStyle,
+            borderTop:this.props.rowId === 0 ? thickLineStyle: regularLineStyle,
+            borderLeft:this.props.id % 9 === 0 ? thickLineStyle: regularLineStyle,
+            borderRight:this.props.id % 3===2 ? thickLineStyle: regularLineStyle,
+        }
+
+        this.onBlur = this.onBlur.bind(this);
+        this.onChange = this.onChange.bind(this);
     }
 
-    _onBlur(e) {
+    onBlur(e) {
         var value = e.target.value;
         try {
             validateInput(value);
@@ -23,30 +33,15 @@ class Square extends React.Component {
         }
     }
     
-    _onChange(e){
+    onChange(e){
         this.props.setValues(this.props.id, e.target.value);
-    }
-    
-    // todo, sollte eigentlich Feld verlassen, danach zusammensetzen mit onBlur
-    _handleKeyPress(e) {
-        if (e.key === 'Enter') {
-            var value = e.target.value;
-            try {
-                validateInput(value);
-                if (isNaN(parseInt(value))) value = '';
-                this.props.setValues(this.props.id, value);
-            } catch (e) {
-                this.props.setValues(this.props.id, '');
-                alert(e.message);
-            }
-        }
     }
 
     render () {
         return (
             <input type="text" className="square" value={this.props.value}
-                onBlur={this._onBlur} onChange={this._onChange} onKeyPress={this._handleKeyPress} 
-                readOnly={this.props.isReadOnly}>
+                onBlur={this.onBlur} onChange={this.onChange}
+                readOnly={this.props.isReadOnly} style={this.style}>
             </input>
         );
     }

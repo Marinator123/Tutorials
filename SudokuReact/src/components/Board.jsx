@@ -6,11 +6,12 @@ import Square from './Square.jsx';
  */
 class Board extends React.Component {
     
-    renderSquare(i) {
+    renderSquare(i, rowId) {
         return (
             <Square
                 key={i}
                 id={i}
+                rowId={rowId}
                 value={this.props.squares[i].value}
                 isReadOnly={this.props.squares[i].readOnly}
                 setValues={this.props.setValues}
@@ -19,18 +20,15 @@ class Board extends React.Component {
     }
 
     render() {
-        //const rowSize = this.props.squares.length / 9;
-        //const rowValues = this.props.squares.slice(i*rowSize, i*rowSize + rowSize);
-
         const squares = this.props.squares;
         const renderedSquares = squares.map((value, i) => {
             return (
-                    this.renderSquare(i)
+                    this.renderSquare(i, Math.floor(i/9))
             );
         });
         
         const rowSize = this.props.squares.length / 9;
-        const containers = Array(9).fill(undefined);
+        const containers = Array(rowSize).fill(undefined);
 
         for (let i = 0; i < rowSize; i++) {
             const renderedSquaresRow = renderedSquares.slice(i*rowSize, i*rowSize + rowSize);
