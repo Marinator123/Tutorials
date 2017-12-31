@@ -1,23 +1,26 @@
 class GameLogic {
     
-    instantiateSquares(size, percEmptyFields) {
+    fillSquares(size, percEmptyFields) {
         var squares = Array(size).fill(null);
         const alreadyTested = Array(size).fill(null);
         var i = 0;
+        var directionForward = true;
         while (i < size) {
             var number;
+            // falls keine passende Nummer für das Feld gefunden werden kann
             if ((number = this.findUniqueNumber(i, squares, alreadyTested[i])) === undefined) {
                 alreadyTested[i] = [];
-                squares[i] = null;
-                i--;
-                continue;
+                squares[i] =  {value: '', readOnly:false};
+                directionForward = false
             }
+            // falls er eine Nummer findet:
             else {
                 if (alreadyTested[i] === null) {alreadyTested[i] = []};
                 alreadyTested[i].push(number);
                 squares[i] = {value: number, readOnly: true};
+                directionForward = true;
             }
-            i++;
+            directionForward ? i++ : i--;
         }
         
         squares = squares.map((entry) => {
@@ -27,6 +30,34 @@ class GameLogic {
             return entry
         });
         
+        return squares;
+    }
+
+    solveSudoku(squares) {
+        const size = squares.length;
+        const alreadyTested = Array(size).fill(null);
+        var i = 0;
+        var directionForward = true;
+        const start = new Date().getTime();
+        while (i < size && new Date().getTime() - start < 2000) {
+            if (squares[i].readOnly === false) {
+                var number;
+                // falls keine passende Nummer für das Feld gefunden werden kann
+                if ((number = this.findUniqueNumber(i, squares, alreadyTested[i])) === undefined) {
+                    alreadyTested[i] = [];
+                    squares[i] = {value: '', readOnly:false};
+                    directionForward = false;
+                }
+                // falls er eine Nummer findet:
+                else {
+                    if (alreadyTested[i] === null) {alreadyTested[i] = []};
+                    alreadyTested[i].push(number);
+                    squares[i] = {value: number, readOnly: false};
+                    directionForward = true;
+                }
+            } 
+            directionForward ? i++ : i--;
+        }
         return squares;
     }
 
@@ -49,7 +80,7 @@ class GameLogic {
         var occupiedNumbers = this.getAllValuesForRow(rowId, squares).concat(
             this.getAllValuesForColumn(columnId, squares)).concat(this.getAllValuesForField(rowId, columnId, squares)).concat(
                 numbersAlreadyTested)
-        return occupiedNumbers.filter((x, i, a) => a.indexOf(x) == i); // find unique numbers
+        return occupiedNumbers.filter((x, i, a) => a.indexOf(x) == i && x !== null); // find unique numbers
     }
 
     getAllValuesForRow(rowId, squares) {

@@ -6,31 +6,49 @@ import GameLogic from '../GameLogic.js'
  */
 class Game extends React.Component {
 
-    // todo: sofortige Lösung
+    // todo:
+    // state vor Lösung wiederherstellen
+    // comments
+    // tests 
     // Schwierigkeitsstufen
     // evtl. check ob nummer noch nicht vergeben
-    
+
     constructor(props) {
         super(props);
-        const gameLogic = new GameLogic();
+        this.boardSize = 81;
+        this.gameLogic = new GameLogic();
         this.state = {
-            squares: gameLogic.instantiateSquares(81, this.props.percEmptyFields)
+            squares: this.gameLogic.fillSquares(this.boardSize, this.props.percEmptyFields)
         }
     }
     
     setValues(id, value) {
         const squares = this.state.squares.slice();
         // evtl. todo check ob squares legit sind
-        squares[id].value = value;
+        squares[id].value = parseInt(value);
         this.setState({squares: squares})
+    }
+
+    solveSudoku() {
+        const squares = this.state.squares.slice();        
+        this.setState({
+            squares:this.gameLogic.solveSudoku(squares)
+        })
     }
 
     render() {
         return (
-            <Board
-                squares={this.state.squares}
-                setValues={(i, j) => this.setValues(i, j)}
-            />
+            <div className="game">
+                <div className="game-board">
+                    <Board
+                        squares={this.state.squares}
+                        setValues={(i, j) => this.setValues(i, j)}
+                    />
+                </div>
+                <div className="button-container">
+                    <button className="button" onClick={() => this.solveSudoku()}>Solve Sudoku</button>
+                </div>
+            </div>
         )
     }
 }
