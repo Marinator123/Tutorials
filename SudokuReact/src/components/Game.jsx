@@ -25,7 +25,7 @@ class Game extends React.Component {
     setValues(id, value) {
         const squares = this.state.squares.slice();
         // evtl. todo check ob squares legit sind
-        squares[id].value = parseInt(value);
+        squares[id].value = value;
         this.setState({squares: squares})
     }
 

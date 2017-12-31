@@ -26,6 +26,7 @@ class Square extends React.Component {
         try {
             validateInput(value);
             if (isNaN(parseInt(value))) value = '';
+            else value = parseInt(value);
             this.props.setValues(this.props.id, value);
         } catch (e) {
             this.props.setValues(this.props.id, '');
