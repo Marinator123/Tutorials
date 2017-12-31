@@ -6,9 +6,12 @@ import GameLogic from '../GameLogic.js'
  */
 class Game extends React.Component {
 
+    // todo: sofortige Lösung
+    // Schwierigkeitsstufen
+    // evtl. check ob nummer noch nicht vergeben
+    
     constructor(props) {
         super(props);
-        console.log(this.props.percEmptyFields)
         const gameLogic = new GameLogic();
         this.state = {
             squares: gameLogic.instantiateSquares(81, this.props.percEmptyFields)

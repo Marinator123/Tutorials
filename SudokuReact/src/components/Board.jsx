@@ -28,15 +28,14 @@ class Board extends React.Component {
         });
         
         const rowSize = this.props.squares.length / 9;
-        const containers = Array(rowSize).fill(undefined);
-
-        for (let i = 0; i < rowSize; i++) {
+        const containers = Array(rowSize).fill(null).map((entr, i) => {
             const renderedSquaresRow = renderedSquares.slice(i*rowSize, i*rowSize + rowSize);
-            containers[i] = 
-            <div key={i} className="board-row">
-                {renderedSquaresRow}
-            </div>
-        }
+            return (
+                <div key={i} className="board-row">
+                    {renderedSquaresRow}
+                </div>
+            )
+        });
         
         return (
             <div className="board">
