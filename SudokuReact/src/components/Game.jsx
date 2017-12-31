@@ -1,6 +1,6 @@
 import React from 'react';
 import Board from './Board.jsx';
-
+import range from 'lodash';
 /**
  * 
  */
@@ -14,32 +14,57 @@ class Game extends React.Component {
     }
 
     instantiateSquares(size) {
-        const squares = Array(size).fill(null);
-        const percEmptyFields = 0.7;
-        for (let i = 0; i < size; i++) {
+        // todo: funktioniert nicht mehr mit emptyFields -> eventuell wäre besser wenn zuerst alle initialisiert werden
+        // und danach wieder einzelne "gelöscht"
+        const squares = Array(size).fill({value:'', readOnly:false}); // temp, danahc auf null setzen
+        const alreadyTested = Array(size).fill(null);
+        const percEmptyFields = 0.0; // outsourcen
+        var i = 0;
+        while (i < size) {
             if (Math.random() > percEmptyFields) {
-                const rowId = Math.floor(i / 9);
-                const columnId = i % 9;
-                /** Generiert die Startnummer des Felds z.B. 43 -> 33 */
-                const startFieldId = i - i % 3 - rowId % 3 * 9;
-                const number = this.findUniqueNumber(rowId, columnId, startFieldId, squares);
-                squares[i] = {value: number, readOnly: true}
+                var number;
+                if ((number = this.findUniqueNumber(i, squares, alreadyTested[i])) === undefined) {
+                    alreadyTested[i] = [];
+                    squares[i].value = '';
+                    i--;
+                    continue;
+                }
+                else {
+                    if (alreadyTested[i] === null) {alreadyTested[i] = []};
+                    alreadyTested[i].push(number);
+                    squares[i] = {value: number, readOnly: true};
+                }
             } else {
-                squares[i] = {value: '', readOnly: false}
+                squares[i] = {value: '', readOnly: false};
             }
+            i++;
         }
         return squares;
     }
 
-    findUniqueNumber(rowId, columnId, startFieldId, squares) {
-        const occupiedNumbers = this.getAllValuesForRow(rowId, squares).concat(
-            this.getAllValuesForColumn(columnId, squares)).concat(this.getAllValuesForField(startFieldId, squares))
-        while (true) {
-            const randomNumber = Math.floor((Math.random() * 9) + 1)
-            if (occupiedNumbers.indexOf(randomNumber) === -1) {
-                return randomNumber;
+    findUniqueNumber(id, squares, numbersAlreadyTested) {
+        const rowId = Math.floor(id / 9);
+        const columnId = id % 9;
+        const occupiedNumbers = this.getOccupiedNumbersForField(rowId, columnId, squares, numbersAlreadyTested);
+        if (occupiedNumbers.length < 9)
+        {
+            while (true) {
+                const randomNumber = Math.floor((Math.random() * 9) + 1)
+                if (occupiedNumbers.indexOf(randomNumber) === -1) {
+                    return randomNumber;
+                }
             }
         }
+    }
+
+    getOccupiedNumbersForField(rowId, columnId, squares, numbersAlreadyTested)  {
+        /** Generiert die Startnummer des Felds z.B. 43 -> 33 */
+        const id = rowId * 9 + columnId;
+        const startFieldId = id - id % 3 - rowId % 3 * 9;
+        var occupiedNumbers = this.getAllValuesForRow(rowId, squares).concat(
+            this.getAllValuesForColumn(columnId, squares)).concat(this.getAllValuesForField(startFieldId, squares)).concat(
+                numbersAlreadyTested)
+        return occupiedNumbers.filter((x, i, a) => a.indexOf(x) == i); // find unique numbers
     }
 
     getAllValuesForRow(rowId, squares) {
@@ -55,10 +80,9 @@ class Game extends React.Component {
     }
 
     getAllValuesForColumn(columnId, squares) {
-        const columnSquares = Array(9).fill(null);
-        for (let i = 0; i < columnSquares.length; i++) {
-            columnSquares[i] = squares[columnId + i*9];
-        }
+        const columnSquares = Array(9).fill(null).map((x,i) => {
+            return (squares[columnId + i*9])
+        });
         return this.extractSquareValues(columnSquares);
     }
 

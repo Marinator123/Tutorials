@@ -16,6 +16,7 @@
         "jest": "^22.0.4",
         "less": "^2.7.3",
         "less-loader": "^4.0.5",
+        "lodash": "^4.17.4",
         "react-test-renderer": "^16.2.0",
         "style-loader": "^0.19.1",
         "webpack": "^3.10.0"
