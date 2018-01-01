@@ -22,20 +22,22 @@ class Square extends React.Component {
     }
 
     onBlur(e) {
-        var value = e.target.value;
-        try {
-            validateInput(value);
-            if (isNaN(parseInt(value))) value = '';
-            else value = parseInt(value);
-            this.props.setValues(this.props.id, value);
-        } catch (e) {
-            this.props.setValues(this.props.id, '');
-            alert(e.message);
+        if (!this.props.isReadOnly) {
+            var value = e.target.value;
+            try {
+                validateInput(value);
+                if (isNaN(parseInt(value))) value = '';
+                else value = parseInt(value);
+                this.props.setValues(this.props.id, value);
+            } catch (e) {
+                this.props.setValues(this.props.id, '');
+                alert(e.message);
+            }
         }
     }
     
     onChange(e){
-        this.props.setValues(this.props.id, e.target.value);
+            this.props.setValues(this.props.id, e.target.value);
     }
 
     render () {

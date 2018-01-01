@@ -5,7 +5,7 @@ class GameLogic {
         const alreadyTested = Array(size).fill(null);
         var i = 0;
         var directionForward = true;
-        while (i < size) {
+        while (i < size && i > -1) {
             var number;
             // falls keine passende Nummer für das Feld gefunden werden kann
             if ((number = this.findUniqueNumber(i, squares, alreadyTested[i])) === undefined) {
@@ -38,21 +38,20 @@ class GameLogic {
         const alreadyTested = Array(size).fill(null);
         var i = 0;
         var directionForward = true;
-        const start = new Date().getTime();
-        while (i < size && new Date().getTime() - start < 2000) {
+        while (i < size && i > -1) {
             if (squares[i].readOnly === false) {
                 var number;
                 // falls keine passende Nummer für das Feld gefunden werden kann
+                squares[i].value = '';
                 if ((number = this.findUniqueNumber(i, squares, alreadyTested[i])) === undefined) {
                     alreadyTested[i] = [];
-                    squares[i] = {value: '', readOnly:false};
                     directionForward = false;
                 }
                 // falls er eine Nummer findet:
                 else {
                     if (alreadyTested[i] === null) {alreadyTested[i] = []};
                     alreadyTested[i].push(number);
-                    squares[i] = {value: number, readOnly: false};
+                    squares[i].value = number;
                     directionForward = true;
                 }
             } 

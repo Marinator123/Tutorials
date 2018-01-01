@@ -7,7 +7,6 @@ import GameLogic from '../GameLogic.js'
 class Game extends React.Component {
 
     // todo:
-    // state vor Lösung wiederherstellen
     // comments
     // tests 
     // Schwierigkeitsstufen
@@ -17,8 +16,10 @@ class Game extends React.Component {
         super(props);
         this.boardSize = 81;
         this.gameLogic = new GameLogic();
+        this.userSolutionState = null;
+        this.originalSquare = this.gameLogic.fillSquares(this.boardSize, this.props.percEmptyFields);
         this.state = {
-            squares: this.gameLogic.fillSquares(this.boardSize, this.props.percEmptyFields)
+            squares: this.originalSquare.map(a => Object.assign({}, a))
         }
     }
     
@@ -28,15 +29,31 @@ class Game extends React.Component {
         squares[id].value = value;
         this.setState({squares: squares})
     }
-
+    
     solveSudoku() {
-        const squares = this.state.squares.slice();        
+        const squares = this.state.squares.slice();
+        this.userSolutionState = squares.map(a => Object.assign({}, a));
         this.setState({
-            squares:this.gameLogic.solveSudoku(squares)
+            squares:this.gameLogic.solveSudoku(this.originalSquare)
         })
     }
 
+    resetSolution() {
+        this.setState({
+            squares:this.userSolutionState,
+        })
+        this.userSolutionState = null;
+    }
+
     render() {
+        var solveFunction, buttonDescription;
+        if (this.userSolutionState === null) {
+            solveFunction = () => this.solveSudoku();
+            buttonDescription = 'Solve Sudoku';
+        } else {
+            solveFunction = () => this.resetSolution();
+            buttonDescription = 'Reset Solution';
+        }
         return (
             <div className="game">
                 <div className="game-board">
@@ -46,7 +63,7 @@ class Game extends React.Component {
                     />
                 </div>
                 <div className="button-container">
-                    <button className="button" onClick={() => this.solveSudoku()}>Solve Sudoku</button>
+                    <button className="button" onClick={solveFunction}>{buttonDescription}</button>
                 </div>
             </div>
         )
