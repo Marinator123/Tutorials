@@ -1,0 +1,2877 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test of solving the Sudoku 1`] = `
+<div
+  className="game"
+>
+  <div
+    className="game-board"
+  >
+    <div
+      className="board"
+    >
+      <div
+        className="board-row"
+      >
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={false}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "2px solid black",
+              "borderRight": "1px solid grey",
+              "borderTop": "2px solid black",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value=""
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={false}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "2px solid black",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value=""
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "2px solid black",
+              "borderTop": "2px solid black",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={8}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "2px solid black",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={3}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "2px solid black",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={9}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "2px solid black",
+              "borderTop": "2px solid black",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={4}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "2px solid black",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={1}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "2px solid black",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={2}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={false}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "2px solid black",
+              "borderTop": "2px solid black",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        className="board-row"
+      >
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={false}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "2px solid black",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value=""
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={1}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "2px solid black",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={4}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={6}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={2}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "2px solid black",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={5}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={false}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value=""
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={false}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value=""
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={false}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "2px solid black",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        className="board-row"
+      >
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "2px solid black",
+              "borderLeft": "2px solid black",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={3}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={false}
+          style={
+            Object {
+              "borderBottom": "2px solid black",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value=""
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={false}
+          style={
+            Object {
+              "borderBottom": "2px solid black",
+              "borderLeft": "1px solid grey",
+              "borderRight": "2px solid black",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value=""
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "2px solid black",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={8}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={false}
+          style={
+            Object {
+              "borderBottom": "2px solid black",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value=""
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "2px solid black",
+              "borderLeft": "1px solid grey",
+              "borderRight": "2px solid black",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={1}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "2px solid black",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={6}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "2px solid black",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={9}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={false}
+          style={
+            Object {
+              "borderBottom": "2px solid black",
+              "borderLeft": "1px solid grey",
+              "borderRight": "2px solid black",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        className="board-row"
+      >
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "2px solid black",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={1}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={false}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value=""
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "2px solid black",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={6}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={false}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value=""
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={3}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "2px solid black",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={9}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={false}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value=""
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={7}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "2px solid black",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={8}
+        />
+      </div>
+      <div
+        className="board-row"
+      >
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "2px solid black",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={8}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={false}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value=""
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "2px solid black",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={3}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={7}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={6}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "2px solid black",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={2}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={5}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={false}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value=""
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "2px solid black",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={9}
+        />
+      </div>
+      <div
+        className="board-row"
+      >
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "2px solid black",
+              "borderLeft": "2px solid black",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={5}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={false}
+          style={
+            Object {
+              "borderBottom": "2px solid black",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value=""
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={false}
+          style={
+            Object {
+              "borderBottom": "2px solid black",
+              "borderLeft": "1px solid grey",
+              "borderRight": "2px solid black",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value=""
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={false}
+          style={
+            Object {
+              "borderBottom": "2px solid black",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value=""
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={false}
+          style={
+            Object {
+              "borderBottom": "2px solid black",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value=""
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "2px solid black",
+              "borderLeft": "1px solid grey",
+              "borderRight": "2px solid black",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={8}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "2px solid black",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={3}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "2px solid black",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={6}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "2px solid black",
+              "borderLeft": "1px solid grey",
+              "borderRight": "2px solid black",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={2}
+        />
+      </div>
+      <div
+        className="board-row"
+      >
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "2px solid black",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={2}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={false}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value=""
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={false}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "2px solid black",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value=""
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={false}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value=""
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={1}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={false}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "2px solid black",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value=""
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={false}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value=""
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={5}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={false}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "2px solid black",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        className="board-row"
+      >
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={false}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "2px solid black",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value=""
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={6}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={false}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "2px solid black",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value=""
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={9}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={false}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value=""
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "2px solid black",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={3}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={2}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={4}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "2px solid black",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={1}
+        />
+      </div>
+      <div
+        className="board-row"
+      >
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={false}
+          style={
+            Object {
+              "borderBottom": "2px solid black",
+              "borderLeft": "2px solid black",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value=""
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "2px solid black",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={3}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "2px solid black",
+              "borderLeft": "1px solid grey",
+              "borderRight": "2px solid black",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={1}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={false}
+          style={
+            Object {
+              "borderBottom": "2px solid black",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value=""
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "2px solid black",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={5}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={false}
+          style={
+            Object {
+              "borderBottom": "2px solid black",
+              "borderLeft": "1px solid grey",
+              "borderRight": "2px solid black",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value=""
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={false}
+          style={
+            Object {
+              "borderBottom": "2px solid black",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value=""
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "2px solid black",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={8}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={false}
+          style={
+            Object {
+              "borderBottom": "2px solid black",
+              "borderLeft": "1px solid grey",
+              "borderRight": "2px solid black",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="button-container"
+  >
+    <button
+      className="button"
+      onClick={[Function]}
+    >
+      Solve Sudoku
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Test of solving the Sudoku 2`] = `
+<div
+  className="game"
+>
+  <div
+    className="game-board"
+  >
+    <div
+      className="board"
+    >
+      <div
+        className="board-row"
+      >
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={false}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "2px solid black",
+              "borderRight": "1px solid grey",
+              "borderTop": "2px solid black",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={6}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={false}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "2px solid black",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={7}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "2px solid black",
+              "borderTop": "2px solid black",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={8}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "2px solid black",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={3}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "2px solid black",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={9}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "2px solid black",
+              "borderTop": "2px solid black",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={4}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "2px solid black",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={1}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "2px solid black",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={2}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={false}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "2px solid black",
+              "borderTop": "2px solid black",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={5}
+        />
+      </div>
+      <div
+        className="board-row"
+      >
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={false}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "2px solid black",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={9}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={1}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "2px solid black",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={4}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={6}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={2}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "2px solid black",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={5}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={false}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={8}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={false}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={3}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={false}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "2px solid black",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={7}
+        />
+      </div>
+      <div
+        className="board-row"
+      >
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "2px solid black",
+              "borderLeft": "2px solid black",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={3}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={false}
+          style={
+            Object {
+              "borderBottom": "2px solid black",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={5}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={false}
+          style={
+            Object {
+              "borderBottom": "2px solid black",
+              "borderLeft": "1px solid grey",
+              "borderRight": "2px solid black",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={2}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "2px solid black",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={8}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={false}
+          style={
+            Object {
+              "borderBottom": "2px solid black",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={7}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "2px solid black",
+              "borderLeft": "1px solid grey",
+              "borderRight": "2px solid black",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={1}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "2px solid black",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={6}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "2px solid black",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={9}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={false}
+          style={
+            Object {
+              "borderBottom": "2px solid black",
+              "borderLeft": "1px solid grey",
+              "borderRight": "2px solid black",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={4}
+        />
+      </div>
+      <div
+        className="board-row"
+      >
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "2px solid black",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={1}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={false}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={2}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "2px solid black",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={6}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={false}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={5}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={3}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "2px solid black",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={9}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={false}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={4}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={7}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "2px solid black",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={8}
+        />
+      </div>
+      <div
+        className="board-row"
+      >
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "2px solid black",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={8}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={false}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={4}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "2px solid black",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={3}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={7}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={6}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "2px solid black",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={2}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={5}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={false}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={1}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "2px solid black",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={9}
+        />
+      </div>
+      <div
+        className="board-row"
+      >
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "2px solid black",
+              "borderLeft": "2px solid black",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={5}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={false}
+          style={
+            Object {
+              "borderBottom": "2px solid black",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={9}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={false}
+          style={
+            Object {
+              "borderBottom": "2px solid black",
+              "borderLeft": "1px solid grey",
+              "borderRight": "2px solid black",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={7}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={false}
+          style={
+            Object {
+              "borderBottom": "2px solid black",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={1}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={false}
+          style={
+            Object {
+              "borderBottom": "2px solid black",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={4}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "2px solid black",
+              "borderLeft": "1px solid grey",
+              "borderRight": "2px solid black",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={8}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "2px solid black",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={3}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "2px solid black",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={6}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "2px solid black",
+              "borderLeft": "1px solid grey",
+              "borderRight": "2px solid black",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={2}
+        />
+      </div>
+      <div
+        className="board-row"
+      >
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "2px solid black",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={2}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={false}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={8}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={false}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "2px solid black",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={9}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={false}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={4}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={1}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={false}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "2px solid black",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={6}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={false}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={7}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={5}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={false}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "2px solid black",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={3}
+        />
+      </div>
+      <div
+        className="board-row"
+      >
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={false}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "2px solid black",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={7}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={6}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={false}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "2px solid black",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={5}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={9}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={false}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={8}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "2px solid black",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={3}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={2}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={4}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "1px solid grey",
+              "borderLeft": "1px solid grey",
+              "borderRight": "2px solid black",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={1}
+        />
+      </div>
+      <div
+        className="board-row"
+      >
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={false}
+          style={
+            Object {
+              "borderBottom": "2px solid black",
+              "borderLeft": "2px solid black",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={4}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "2px solid black",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={3}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "2px solid black",
+              "borderLeft": "1px solid grey",
+              "borderRight": "2px solid black",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={1}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={false}
+          style={
+            Object {
+              "borderBottom": "2px solid black",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={2}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "2px solid black",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={5}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={false}
+          style={
+            Object {
+              "borderBottom": "2px solid black",
+              "borderLeft": "1px solid grey",
+              "borderRight": "2px solid black",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={7}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={false}
+          style={
+            Object {
+              "borderBottom": "2px solid black",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={9}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={true}
+          style={
+            Object {
+              "borderBottom": "2px solid black",
+              "borderLeft": "1px solid grey",
+              "borderRight": "1px solid grey",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={8}
+        />
+        <input
+          className="square"
+          onBlur={[Function]}
+          onChange={[Function]}
+          readOnly={false}
+          style={
+            Object {
+              "borderBottom": "2px solid black",
+              "borderLeft": "1px solid grey",
+              "borderRight": "2px solid black",
+              "borderTop": "1px solid grey",
+              "color": "grey",
+            }
+          }
+          type="text"
+          value={6}
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="button-container"
+  >
+    <button
+      className="button"
+      onClick={[Function]}
+    >
+      Reset Solution
+    </button>
+  </div>
+</div>
+`;
