@@ -6,7 +6,8 @@ import renderer from 'react-test-renderer';
 test('Test Function FindUniqueNumber', () => {
     const gameLogic = new GameLogic();
     // Overwrite this Function, so it always returns a number between 1-6
-    gameLogic.getOccupiedNumbersForField = jest.fn().mockImplementation(() => {return [1,2,3,4,5,6]});
+    gameLogic.getOccupiedNumbersForField = jest.fn().mockImplementation(
+        () => {return [1,2,3,4,5,6]});
     // The returned number of getOccupiedNumbersForField has to be between 7-9
     expect([7,8,9]).toContain(gameLogic.findUniqueNumber(1,null,null))
 });
