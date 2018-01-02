@@ -1,12 +1,15 @@
-import Game from "../src/components/Game"
-
-import GameLogic from "../src/GameLogic"
+import Game from '../src/components/Game';
+import GameLogic from '../src/GameLogic';
 import React from 'react';
 import renderer from 'react-test-renderer';
 
-    //import {fillSquares} from "../src/GameLogic"
-    //fillSquares = jest.fn().mockImplementation((a,b) => {console.log(a)});
-
+test('Test Function FindUniqueNumber', () => {
+    const gameLogic = new GameLogic();
+    // Overwrite this Function, so it always returns a number between 1-6
+    gameLogic.getOccupiedNumbersForField = jest.fn().mockImplementation(() => {return [1,2,3,4,5,6]});
+    // The returned number of getOccupiedNumbersForField has to be between 7-9
+    expect([7,8,9]).toContain(gameLogic.findUniqueNumber(1,null,null))
+});
 
 test('Test of the Function to fill the Squares', () => {
     const gameLogic = new GameLogic();
@@ -26,7 +29,10 @@ test('Test of the Function to fill the Squares', () => {
 test('Test of solving the Sudoku', () => {
     // Example values for squares with factor 0.4
     const exampleInput = [{"value":"","readOnly":false},{"value":"","readOnly":false},{"value":8,"readOnly":true},{"value":3,"readOnly":true},{"value":9,"readOnly":true},{"value":4,"readOnly":true},{"value":1,"readOnly":true},{"value":2,"readOnly":true},{"value":"","readOnly":false},{"value":"","readOnly":false},{"value":1,"readOnly":true},{"value":4,"readOnly":true},{"value":6,"readOnly":true},{"value":2,"readOnly":true},{"value":5,"readOnly":true},{"value":"","readOnly":false},{"value":"","readOnly":false},{"value":"","readOnly":false},{"value":3,"readOnly":true},{"value":"","readOnly":false},{"value":"","readOnly":false},{"value":8,"readOnly":true},{"value":"","readOnly":false},{"value":1,"readOnly":true},{"value":6,"readOnly":true},{"value":9,"readOnly":true},{"value":"","readOnly":false},{"value":1,"readOnly":true},{"value":"","readOnly":false},{"value":6,"readOnly":true},{"value":"","readOnly":false},{"value":3,"readOnly":true},{"value":9,"readOnly":true},{"value":"","readOnly":false},{"value":7,"readOnly":true},{"value":8,"readOnly":true},{"value":8,"readOnly":true},{"value":"","readOnly":false},{"value":3,"readOnly":true},{"value":7,"readOnly":true},{"value":6,"readOnly":true},{"value":2,"readOnly":true},{"value":5,"readOnly":true},{"value":"","readOnly":false},{"value":9,"readOnly":true},{"value":5,"readOnly":true},{"value":"","readOnly":false},{"value":"","readOnly":false},{"value":"","readOnly":false},{"value":"","readOnly":false},{"value":8,"readOnly":true},{"value":3,"readOnly":true},{"value":6,"readOnly":true},{"value":2,"readOnly":true},{"value":2,"readOnly":true},{"value":"","readOnly":false},{"value":"","readOnly":false},{"value":"","readOnly":false},{"value":1,"readOnly":true},{"value":"","readOnly":false},{"value":"","readOnly":false},{"value":5,"readOnly":true},{"value":"","readOnly":false},{"value":"","readOnly":false},{"value":6,"readOnly":true},{"value":"","readOnly":false},{"value":9,"readOnly":true},{"value":"","readOnly":false},{"value":3,"readOnly":true},{"value":2,"readOnly":true},{"value":4,"readOnly":true},{"value":1,"readOnly":true},{"value":"","readOnly":false},{"value":3,"readOnly":true},{"value":1,"readOnly":true},{"value":"","readOnly":false},{"value":5,"readOnly":true},{"value":"","readOnly":false},{"value":"","readOnly":false},{"value":8,"readOnly":true},{"value":"","readOnly":false}];
-
+    /**
+     * Problem ist hier, dass Game eine andere Implementation von GameLogic hat, deswegen
+     * müssen hier die Variablen direkt überschrieben werden, statt eine Funktion zu "mocken".
+     */
     const component = renderer.create(
         <Game percEmptyFields={1}/>,
     );
