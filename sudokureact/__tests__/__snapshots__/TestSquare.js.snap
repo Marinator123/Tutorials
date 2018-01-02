@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Create new Square 1`] = `
+<input
+  className="square"
+  onBlur={[Function]}
+  onChange={[Function]}
+  readOnly={false}
+  style={
+    Object {
+      "borderBottom": "1px solid grey",
+      "borderLeft": "1px solid grey",
+      "borderRight": "1px solid grey",
+      "borderTop": "1px solid grey",
+      "color": "grey",
+    }
+  }
+  type="text"
+  value={1}
+/>
+`;
