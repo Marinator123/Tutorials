@@ -20,7 +20,7 @@ test('Create new Square', () => {
 });
 
 test('Modify a square', () => {
-    const component = renderer.create(
+    const component = renderer.create( 
         <Game percEmptyFields={1}/>,
     );
     let tree = component.toJSON();
