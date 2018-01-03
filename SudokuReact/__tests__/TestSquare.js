@@ -33,3 +33,14 @@ test('Modify a square', () => {
     exampleSquare = tree.children[0].children[0].children[0].children[0];
     expect(exampleSquare.props.value).toBe(5)
 });
+
+test('Test of validate Input', () => {
+    const testValuesThrowError = ['0','10','lol'];
+    testValuesThrowError.map((entr) => {
+            expect(() => {Square.validateInput(entr);}).toThrow()
+    })
+    const testValuesValid = ['1','7'];
+    testValuesValid.map((entr) => {
+        expect(Square.validateInput(entr)).toBeUndefined()
+})
+});

@@ -25,7 +25,7 @@ class Square extends React.Component {
         if (!this.props.isReadOnly) {
             var value = e.target.value;
             try {
-                validateInput(value);
+                this.constructor.validateInput(value);
                 if (isNaN(parseInt(value))) value = '';
                 else value = parseInt(value);
                 this.props.setValues(this.props.id, value);
@@ -40,6 +40,16 @@ class Square extends React.Component {
             this.props.setValues(this.props.id, e.target.value);
     }
 
+    static validateInput(value) {
+        if (value.length > 0) {
+            if (isNaN(value)) {
+                throw new Error('Input is not a Number');
+            } else if (value > 9 || value < 1) {
+                throw new Error('Input must be between 1-9')
+            }
+        }
+    }
+    
     render () {
         return (
             <input type="text" className="square" value={this.props.value}
@@ -51,13 +61,3 @@ class Square extends React.Component {
 }
 
 export default Square;
-
-function validateInput(value) {
-    if (value.length > 0) {
-        if (isNaN(value)) {
-            throw new Error('Input is not a Number');
-        } else if (value > 9 || value < 1) {
-            throw new Error('Input must be between 1-9')
-        }
-    }
-}
