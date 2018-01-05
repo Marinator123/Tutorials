@@ -1,7 +1,8 @@
 {
     "scripts": {
         "build": "webpack",
-        "test": "jest"
+        "test": "jest",
+        "start:dev": "webpack-dev-server"
     },
     "devDependencies": {
         "babel-core": "^6.26.0",
@@ -19,17 +20,22 @@
         "lodash": "^4.17.4",
         "react-test-renderer": "^16.2.0",
         "style-loader": "^0.19.1",
-        "webpack": "^3.10.0"
+        "webpack": "^3.10.0",
+        "webpack-dev-server": "^2.9.7"
     },
     "dependencies": {
         "babel-polyfill": "^6.26.0",
         "react": "^16.2.0",
-        "react-dom": "^16.2.0"
+        "react-dom": "^16.2.0",
+        "react-hot-loader": "^3.1.3"
     },
     "babel": {
         "presets": [
             "react",
             "env"
+        ],
+        "plugins": [
+            "react-hot-loader/babel"
         ]
     }
 }

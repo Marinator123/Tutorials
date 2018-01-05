@@ -8,7 +8,6 @@ class Game extends React.Component {
 
     // todo:
     // comments
-    // tests 
     // Schwierigkeitsstufen
     // evtl. check ob nummer noch nicht vergeben
 
