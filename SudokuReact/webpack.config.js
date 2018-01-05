@@ -9,10 +9,11 @@ const extractLESS = new ExtractTextPlugin({
 
 module.exports = {
   entry: {
-    bundle: ['./src/main.js', 'react-hot-loader/patch'],
+    bundle: ['react-hot-loader/patch', './src/main.js'],
     stylesheet: './src/stylesheet.less'
   },
   devServer: {
+    inline: true,
     contentBase: './dist',
     hot: true
   },
@@ -38,7 +39,6 @@ module.exports = {
   },
   plugins: [
     extractLESS,
-    new webpack.NamedModulesPlugin(),
     new webpack.HotModuleReplacementPlugin()
   ]
 };

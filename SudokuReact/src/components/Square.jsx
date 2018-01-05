@@ -37,7 +37,7 @@ class Square extends React.Component {
     }
     
     onChange(e){
-            this.props.setValues(this.props.id, e.target.value);
+        this.props.setValues(this.props.id, e.target.value);
     }
 
     static validateInput(value) {

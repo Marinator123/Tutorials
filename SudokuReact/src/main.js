@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {AppContainer} from 'react-hot-loader'
 
-import GameLogic from  './GameLogic.js';
+import GameLogic from  './GameLogic';
 import Game from  './components/Game.jsx';
 import Board from './components/Board.jsx';
 import Square from './components/Square.jsx';
@@ -18,7 +18,5 @@ window.renderApp = function(idRoot, percEmptyFields){
 };
 
 if (module.hot) {
-    module.hot.accept('./components/Game.jsx', () => {
-        
-    })
+    module.hot.accept();
 }
