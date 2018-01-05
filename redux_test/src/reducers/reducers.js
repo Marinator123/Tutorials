@@ -19,10 +19,13 @@ function visibilityFilter(state = SHOW_ALL, action) {
   }
 }
 
+
+// STATE IST HIER NUR SUBTEIL VON APPLIKATIONSSTATE
 function todos(state = [], action) {
   switch (action.type) {
     case ADD_TODO:
       return [
+          // neue action wird zu state hinzugefügt
         ...state,
         {
           text: action.text,
@@ -30,6 +33,8 @@ function todos(state = [], action) {
         }
       ]
     case TOGGLE_TODO:
+      // falls index übereinstimmt mit gewünschter action
+      // setze diese auf !completed
       return state.map((todo, index) => {
         if (index === action.index) {
           return Object.assign({}, todo, {
@@ -43,6 +48,10 @@ function todos(state = [], action) {
   }
 }
 
+// useful for “splitting” the root 
+// reducer into separate functions that each manage one branch of the state tree.
+// branch = parentobjekt in diesem fall alle todos / current visibilityfilter
+// gesamter applikationsstate wird hier zusammengefügt
 const todoApp = combineReducers({
   visibilityFilter,
   todos
