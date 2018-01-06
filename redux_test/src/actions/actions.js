@@ -9,6 +9,10 @@ export const ADD_TODO = 'ADD_TODO'
 export const TOGGLE_TODO = 'TOGGLE_TODO'
 export const SET_VISIBILITY_FILTER = 'SET_VISIBILITY_FILTER'
 
+// NUR Konstanten
+export const INCREMENT = 'INCREMENT'
+export const DECREMENT = 'DECREMENT'
+
 /*
  * other constants
  */
@@ -35,4 +39,13 @@ export function toggleTodo(index) {
 // Wechsel der zurzeit sichtbaren Tasks
 export function setVisibilityFilter(filter) {
   return { type: SET_VISIBILITY_FILTER, filter }
+}
+
+// gibt den Typ der Action an 
+export function incrementCounter() {
+  return { type: INCREMENT }
+}
+
+export function decrementCounter() {
+  return { type: DECREMENT }
 }
