@@ -7,7 +7,7 @@ import Counter from '../components/Counter.jsx'
 // anhand des State, wenn eine Funktion ausgeführt der Klasse
 const mapStateToProps = state => {
     return {
-        value: state.counter
+        value: state.counter.present
     }
   }
   

@@ -1,5 +1,6 @@
 // Reducers aktualisieren den State der Applikation
 // basierend auf den zur Verfügung stehenden Actions
+import undoable, { includeAction } from 'redux-undo'
 
 import {
   INCREMENT,
@@ -18,4 +19,6 @@ function counter(state = 0, action) {
   }
 }
 
-export default counter
+const undoableCounter = undoable(counter, { filter: includeAction([INCREMENT, DECREMENT]) })
+
+export default undoableCounter

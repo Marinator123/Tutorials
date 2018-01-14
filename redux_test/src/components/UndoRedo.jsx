@@ -7,8 +7,8 @@ export default class UndoRedo extends Component {
   render() {
     return (
       <p>
-        <Button onClick={this.props.onUndo} text="Undo" />{" "}
-        <Button onClick={this.props.onRedo} text="Redo" />
+        <Button disabled={!(this.props.canUndo)} onClick={this.props.onUndo} text="Undo" />{" "}
+        <Button disabled={!(this.props.canRedo)} onClick={this.props.onRedo} text="Redo" />
       </p>
     );
   }
