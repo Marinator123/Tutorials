@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
+import Button  from './Button.jsx'
 
 // Komplett von implementation unabhängige Komponente
 export default class Counter extends Component {
@@ -7,15 +8,17 @@ export default class Counter extends Component {
         const { value, onIncrement, onDecrement } = this.props;
         // das {' '} erzeugt einen Leerschlag
         return (
-            <p>
+            <p> 
                 Clicked: {value} times
+                <Button 
+                    onClick={onIncrement}
+                    text="+"
+                />
                 {' '}
-                <button onClick={onIncrement}>
-                    +
-                </button>
-                <button onClick={onDecrement}>
-                    -
-                </button>
+                <Button 
+                    onClick={onDecrement}
+                    text="-"
+                />
             </p>
         )
     }

@@ -1,6 +1,3 @@
-// Reducers aktualisieren den State der Applikation
-// basierend auf den zur Verfügung stehenden Actions
-
 import { combineReducers } from 'redux'
 import {
   ADD_TODO,
@@ -66,10 +63,4 @@ function todos(state = [], action) {
 // branch = parentobjekt in diesem fall alle todos / current visibilityfilter
 // gesamter applikationsstate wird hier zusammengefügt
 // Anhand von ActionId wird automatisch die richtige Action ausgewählt mithilfe des Reducers!
-const todoApp = combineReducers({
-  visibilityFilter,
-  todos,
-  counter
-})
-
-export default todoApp
+export default todos

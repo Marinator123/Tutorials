@@ -3,7 +3,7 @@ import Footer from './Footer.jsx'
 import AddTodo from '../containers/AddTodo'
 import VisibleTodoList from '../containers/VisibleTodoList'
 import CounterHandler from '../containers/CounterHandler'
-
+import UndoRedo from '../components/UndoRedo.jsx'
 class App extends React.Component {
     render() {
         return(
@@ -11,7 +11,8 @@ class App extends React.Component {
                 <AddTodo />
                 <VisibleTodoList />
                 <Footer />
-                <CounterHandler />
+                <CounterHandler/>
+                <UndoRedo/>
             </div>
         )
     }

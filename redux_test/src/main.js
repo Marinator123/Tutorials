@@ -4,7 +4,7 @@ import {AppContainer} from 'react-hot-loader'
 import { createStore } from 'redux'
 import { Provider } from 'react-redux'
 import App from './components/App.jsx'
-import todoApp from './reducers/reducers'
+import todoApp from './reducers'
 
 const store = createStore(todoApp)
 
