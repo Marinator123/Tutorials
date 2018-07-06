@@ -18,7 +18,7 @@ export default class Menu {
         this.items.forEach((entr : string) => {
             console.log(entr);
         });
-        
         console.log(this.taste);
     }
+    
 }
