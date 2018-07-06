@@ -4,14 +4,12 @@
         "commonjs": true,
         "es6": true,
         "node": true,
-        "jquery": true
+        "jquery": true,
+        "jest": true
     },
     "parser": "typescript-eslint-parser",
     "parserOptions": {
         "ecmaVersion": 2017,
-        "ecmaFeatures": {
-            "jsx": true
-        },
         "sourceType": "module"
     },
     "globals": {
@@ -21,7 +19,9 @@
         "typescript"
     ],
     "rules": {
+        "no-unused-vars": "warn",
         "typescript/no-unused-vars": "warn",
+        "typescript/no-explicit-any": "warn",
         "camelcase": [1,{ "properties": "always" }],
         "eqeqeq": "warn",
         "semi": "warn",
@@ -29,9 +29,7 @@
         "no-const-assign": "warn",
         "no-this-before-super": "warn",
         "quotes": ["error", "single"],
-        "no-undef": "warn",
         "no-unreachable": "warn",
-        "no-unused-vars": "warn",
         "constructor-super": "warn",
         "valid-typeof": "warn"
     }
